@@ -10,4 +10,7 @@ import productData from '../../../products.json';
 })
 export class ProductListComponent {
   products = productData
+  searchProducts() {
+    
+  }
 }
