@@ -1,0 +1,17 @@
+<input type="text" name="" id="" class="w-100" placeholder="Search Products">
+<table class="w-100 mt-5">
+    <tr *ngFor = "let product of products" >
+        <td class="py-4 px-3 product-border">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <p>{{product.name}}</p>
+                    <p>{{product.price}}</p>
+                </div>
+                <div >
+                    <button *ngIf = "product.quantity != 0">Add To cart</button>
+                    <p *ngIf = "product.quantity == 0">Out of Stock</p>
+                </div>     
+            </div>
+        </td>
+    </tr>
+</table>
